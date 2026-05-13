@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Andrés Castellanos — Junior Backend Developer. Automatización, APIs e integración de sistemas con JavaScript, n8n y Python." />
+  <title>Andrés Castellanos · Backend Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts: Playfair Display (display) + DM Sans (body) + JetBrains Mono (code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Back to top">
+        <span class="logo-bracket">&lt;</span>AC<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about" class="nav-link">Sobre mí</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+        <li>
+          <a href="assets/andres-castellanos-cv.pdf" class="nav-cta" download aria-label="Descargar CV">
+            CV ↓
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero-bg-text" aria-hidden="true">API</div>
+      <div class="container hero-inner">
+
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Disponible para oportunidades
+        </div>
+
+        <h1 class="hero-title">
+          Hola, soy <em>Andrés Castellanos</em>
+          <br />Junior&nbsp;Backend&nbsp;Developer
+        </h1>
+
+        <p class="hero-description">
+          Construyo la lógica que mueve las aplicaciones — APIs, automatizaciones
+          e integraciones de sistemas. Apasionado por hacer que los procesos
+          trabajen solos, de forma confiable y escalable.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Ver mis proyectos</a>
+          <a href="#contact" class="btn btn-ghost">Hablemos</a>
+        </div>
+
+        <div class="hero-scroll-hint" aria-hidden="true">
+          <span>bajar</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT SECTION
+    ============================================================ -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+
+        <div class="about-image-wrap">
+          <!-- Placeholder avatar using CSS art -->
+          <div class="avatar-frame" aria-hidden="true">
+            <div class="avatar-placeholder">
+              <svg viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="60" cy="48" r="28" fill="var(--accent)" opacity="0.15"/>
+                <circle cx="60" cy="46" r="24" fill="var(--accent)" opacity="0.3"/>
+                <ellipse cx="60" cy="115" rx="38" ry="25" fill="var(--accent)" opacity="0.15"/>
+                <ellipse cx="60" cy="112" rx="30" ry="20" fill="var(--accent)" opacity="0.25"/>
+                <circle cx="60" cy="44" r="18" fill="var(--navy)"/>
+                <circle cx="60" cy="44" r="14" fill="var(--cream-dark)"/>
+                <circle cx="54" cy="42" r="2.5" fill="var(--navy)"/>
+                <circle cx="66" cy="42" r="2.5" fill="var(--navy)"/>
+                <path d="M54 50 Q60 54 66 50" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              </svg>
+            </div>
+            <div class="avatar-tag">&lt;/backend-dev&gt;</div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="section-label">Sobre mí</p>
+          <h2 id="about-heading" class="section-title">Construyendo el motor detrás de las apps</h2>
+
+          <p class="about-text">
+            Soy un desarrollador backend junior ubicado en Bucaramanga, Colombia,
+            con enfoque en automatización de procesos, integración de APIs y lógica
+            de negocio. Me apasiona construir sistemas que resuelvan problemas reales —
+            que funcionen de forma confiable aunque nadie los esté mirando.
+          </p>
+          <p class="about-text">
+            Trabajo con herramientas como n8n, JavaScript y Python para conectar sistemas,
+            procesar datos y automatizar flujos. Mi objetivo es unirme a un equipo donde
+            pueda crecer en el ecosistema backend y aportar desde el primer día.
+          </p>
+
+          <ul class="about-facts" role="list">
+            <li class="fact-item">
+              <span class="fact-icon">📍</span>
+              <span>Bucaramanga, Colombia · Disponible para remoto</span>
+            </li>
+            <li class="fact-item">
+              <span class="fact-icon">🎓</span>
+              <span>Estudiante de Ingeniería de Sistemas</span>
+            </li>
+            <li class="fact-item">
+              <span class="fact-icon">💬</span>
+              <span>Español (nativo) · Inglés (en proceso)</span>
+            </li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary">Contáctame</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS SECTION
+    ============================================================ -->
+    <section class="skills section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <p class="section-label center">Tech stack</p>
+        <h2 id="skills-heading" class="section-title center">Skills &amp; Herramientas</h2>
+        <p class="section-sub center">
+          Tecnologías con las que construyo, automatizo e integro sistemas cada día.
+        </p>
+
+        <div class="skills-grid">
+
+          <!-- JavaScript -->
+          <article class="skill-card" style="--delay: 0ms">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#f7df1e" opacity="0.18"/><text x="50%" y="57%" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="700" fill="#b8a800">JS</text></svg>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-desc">Lógica de negocio, manipulación de datos, async/await, consumo de APIs REST y automatización de flujos.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript 75%">
+              <div class="skill-fill" style="--w: 75%; --color: #b8a800"></div>
+            </div>
+            <span class="skill-level">Intermedio</span>
+          </article>
+
+          <!-- Python -->
+          <article class="skill-card" style="--delay: 60ms">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#3776ab" opacity="0.15"/><text x="50%" y="57%" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#3776ab">Py</text></svg>
+            </div>
+            <h3 class="skill-name">Python</h3>
+            <p class="skill-desc">Scripts de automatización, procesamiento de datos, integración con APIs e interacción con servicios externos.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Python 65%">
+              <div class="skill-fill" style="--w: 65%; --color: #3776ab"></div>
+            </div>
+            <span class="skill-level">Intermedio</span>
+          </article>
+
+          <!-- n8n / Automatización -->
+          <article class="skill-card" style="--delay: 120ms">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#ea4b71" opacity="0.15"/><text x="50%" y="57%" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#ea4b71">n8n</text></svg>
+            </div>
+            <h3 class="skill-name">n8n · Automatización</h3>
+            <p class="skill-desc">Diseño de workflows, integración con webhooks, servicios externos, lógica condicional y nodos de IA.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="n8n 80%">
+              <div class="skill-fill" style="--w: 80%; --color: #ea4b71"></div>
+            </div>
+            <span class="skill-level">Avanzado</span>
+          </article>
+
+          <!-- APIs REST -->
+          <article class="skill-card" style="--delay: 180ms">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#22c55e" opacity="0.15"/><text x="50%" y="57%" text-anchor="middle" dominant-baseline="middle" font-size="10" font-weight="700" fill="#16a34a">API</text></svg>
+            </div>
+            <h3 class="skill-name">APIs REST</h3>
+            <p class="skill-desc">Consumo e integración de APIs externas (OpenAI, Telegram, Google, etc.), manejo de JSON y autenticación.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="APIs REST 75%">
+              <div class="skill-fill" style="--w: 75%; --color: #16a34a"></div>
+            </div>
+            <span class="skill-level">Intermedio</span>
+          </article>
+
+          <!-- Git & GitHub -->
+          <article class="skill-card" style="--delay: 240ms">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#f05032" opacity="0.12"/><text x="50%" y="57%" text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="700" fill="#f05032">GIT</text></svg>
+            </div>
+            <h3 class="skill-name">Git &amp; GitHub</h3>
+            <p class="skill-desc">Control de versiones, ramas, pull requests y flujos de trabajo colaborativos en proyectos reales.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Git 75%">
+              <div class="skill-fill" style="--w: 75%; --color: #f05032"></div>
+            </div>
+            <span class="skill-level">Intermedio</span>
+          </article>
+
+          <!-- Bases de Datos -->
+          <article class="skill-card" style="--delay: 300ms">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#7c3aed" opacity="0.12"/><text x="50%" y="57%" text-anchor="middle" dominant-baseline="middle" font-size="10" font-weight="700" fill="#7c3aed">SQL</text></svg>
+            </div>
+            <h3 class="skill-name">Bases de Datos</h3>
+            <p class="skill-desc">Consultas SQL, modelado básico de datos, integración con Google Sheets como almacenamiento ligero de datos.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Bases de datos 60%">
+              <div class="skill-fill" style="--w: 60%; --color: #7c3aed"></div>
+            </div>
+            <span class="skill-level">Familiar</span>
+          </article>
+
+        </div>
+
+        <!-- Tools row -->
+        <div class="tools-row" aria-label="Herramientas adicionales">
+          <span class="tool-tag">VS Code</span>
+          <span class="tool-tag">Postman</span>
+          <span class="tool-tag">Google Sheets API</span>
+          <span class="tool-tag">Telegram Bot API</span>
+          <span class="tool-tag">OpenAI API</span>
+          <span class="tool-tag">Webhooks</span>
+          <span class="tool-tag">npm</span>
+          <span class="tool-tag">Linux CLI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS SECTION
+    ============================================================ -->
+    <section class="projects section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <p class="section-label center">Mi trabajo</p>
+        <h2 id="projects-heading" class="section-title center">Proyectos Destacados</h2>
+        <p class="section-sub center">
+          Proyectos reales donde aplico automatización, integración de APIs y lógica de backend.
+        </p>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 — Sistema N8N (proyecto real) -->
+          <article class="project-card" aria-label="Project: Sistema Automatizado de Gestión de Inasistencias">
+            <div class="project-image" aria-hidden="true">
+              <div class="project-mockup mockup-n8n">
+                <div class="mockup-bar"></div>
+                <div class="mockup-content">
+                  <div class="n8n-title">Gestión de Inasistencias</div>
+                  <div class="n8n-flow">
+                    <div class="n8n-node n8n-webhook">Webhook</div>
+                    <div class="n8n-arrow">→</div>
+                    <div class="n8n-node n8n-ai">GPT-4o</div>
+                    <div class="n8n-arrow">→</div>
+                    <div class="n8n-node n8n-sheets">Sheets</div>
+                  </div>
+                  <div class="n8n-flow">
+                    <div class="n8n-badge n8n-ok">✓ APROBADA</div>
+                    <div class="n8n-badge n8n-rev">⏳ REVISIÓN</div>
+                    <div class="n8n-badge n8n-no">✗ RECHAZADA</div>
+                  </div>
+                  <div class="n8n-footer">
+                    <span>✉ Gmail</span><span>💬 Telegram</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-num">01</span>
+                <div class="project-tags">
+                  <span class="tag">n8n</span>
+                  <span class="tag">GPT-4o-mini</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Google Sheets</span>
+                  <span class="tag">Telegram API</span>
+                </div>
+              </div>
+              <h3 class="project-title">Sistema Automatizado de Inasistencias</h3>
+              <p class="project-desc">
+                Sistema de automatización que recibe solicitudes de justificación académica vía formulario web,
+                analiza el documento adjunto (PDF o imagen) con IA (GPT-4o-mini), aplica una lógica híbrida
+                de decisión por confianza y notifica al estudiante por Gmail. Incluye un bot de Telegram
+                para consultar el estado de solicitudes en tiempo real.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Kiro061/Proyecto-N8N" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Ver Proyecto N8N en GitHub">
+                  <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 — Catálogo de Cursos (proyecto real) -->
+          <article class="project-card" aria-label="Project: Catálogo de Cursos Institucional">
+            <div class="project-image" aria-hidden="true">
+              <div class="project-mockup mockup-catalog">
+                <div class="mockup-bar"></div>
+                <div class="mockup-content">
+                  <div class="cat-header">
+                    <span class="cat-title">Catálogo de Cursos</span>
+                    <span class="cat-theme">🌙</span>
+                  </div>
+                  <div class="cat-search">🔍 Buscar curso o docente…</div>
+                  <div class="cat-grid">
+                    <div class="cat-card">
+                      <div class="cat-card-tag">Matemáticas</div>
+                      <div class="cat-card-name">Cálculo I</div>
+                    </div>
+                    <div class="cat-card">
+                      <div class="cat-card-tag">Sistemas</div>
+                      <div class="cat-card-name">Prog. Web</div>
+                    </div>
+                    <div class="cat-card">
+                      <div class="cat-card-tag">Ciencias</div>
+                      <div class="cat-card-name">Física II</div>
+                    </div>
+                    <div class="cat-card">
+                      <div class="cat-card-tag">Inglés</div>
+                      <div class="cat-card-name">B2 Level</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-num">02</span>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+              <h3 class="project-title">Catálogo de Cursos Institucional</h3>
+              <p class="project-desc">
+                Plataforma web para una institución educativa que muestra el catálogo completo de cursos.
+                Incluye buscador en tiempo real por nombre o docente, filtro dinámico por área académica,
+                modal con detalle de módulos y docente, toggle de tema oscuro/claro, y sistema de
+                autenticación con vista diferenciada para estudiantes. Construido en JavaScript vanilla
+                con arquitectura modular y más de 35 commits colaborativos.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Kiro061/Proyecto-JavaScript-Arturo-y-Andres" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Ver Catálogo de Cursos en GitHub">
+                  <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="projects-footer">
+          <a href="https://github.com/Kiro061" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+            Ver más en GitHub →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+    ============================================================ -->
+    <section class="contact section" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-inner">
+        <div class="contact-left">
+          <p class="section-label">Contacto</p>
+          <h2 id="contact-heading" class="section-title">Trabajemos juntos</h2>
+          <p class="contact-text">
+            Estoy buscando activamente prácticas y posiciones junior en backend.
+            Si tienes una oportunidad, un proyecto o simplemente quieres conversar
+            sobre tecnología — escríbeme, mi bandeja siempre está abierta.
+          </p>
+
+          <ul class="contact-links" role="list">
+            <li>
+              <a href="mailto:andresca061@gmail.com" class="contact-link" aria-label="Enviar email a Andrés">
+                <span class="contact-icon" aria-hidden="true">✉</span>
+                <span>andresca061@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Kiro061" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub de Andrés">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                </span>
+                <span>github.com/Kiro061</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/andres-castellanos-57ab223b6/" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn de Andrés">
+                <span class="contact-icon" aria-hidden="true">in</span>
+                <span>linkedin.com/in/andres-castellanos-57ab223b6</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form" id="contact-form" novalidate aria-label="Formulario de contacto">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required autocomplete="name" />
+                <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required autocomplete="email" />
+                <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Asunto</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="¿De qué se trata?" />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Cuéntame sobre tu proyecto u oportunidad…" required rows="5"></textarea>
+              <span class="form-error" id="message-error" role="alert" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              Enviar mensaje
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </button>
+            <p class="form-success" id="form-success" aria-live="polite" hidden>
+              ✓ ¡Mensaje enviado! Te respondo pronto.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <a href="#hero" class="footer-logo" aria-label="Back to top">
+        <span class="logo-bracket">&lt;</span>AC<span class="logo-bracket">/&gt;</span>
+      </a>
+      <p class="footer-copy">
+        Diseñado &amp; construido por <strong>Andrés Castellanos</strong> · <span id="footer-year"></span>
+      </p>
+      <div class="footer-links" aria-label="Footer social links">
+        <a href="https://github.com/Kiro061" class="footer-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+        <a href="https://www.linkedin.com/in/andres-castellanos-57ab223b6/" class="footer-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LI</a>
+        <a href="mailto:andresca061@gmail.com" class="footer-link" aria-label="Email">✉</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
