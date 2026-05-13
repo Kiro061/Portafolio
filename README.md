@@ -1,143 +1,163 @@
-# Andrés Castellanos — Junior Frontend Developer Portfolio
+# Andrés Castellanos — Junior Backend Developer Portfolio
 
-Un portafolio profesional de una sola página, responsivo y limpio, construido con HTML5, CSS3 y JavaScript vanilla. Sin frameworks, sin build tools — solo fundamentos sólidos de frontend y atención al detalle.
+Portafolio profesional de una sola página construido con HTML5, CSS3 y JavaScript vanilla.
+Diseñado para presentar proyectos reales de backend, automatización e integración de sistemas
+ante reclutadores y equipos técnicos.
 
 ---
 
-## 📁 Project Structure
+## 📁 Estructura del proyecto
 
 ```
 portfolio/
-├── index.html          # Main HTML document (semantic, accessible)
-├── styles.css          # All CSS — variables, layout, components, responsive
-├── main.js             # Vanilla JS — nav, animations, form validation
+├── index.html          # Documento HTML principal (semántico, accesible)
+├── styles.css          # Estilos — variables, layout, componentes, responsivo
+├── main.js             # JS vanilla — nav, animaciones, validación de formulario
 ├── assets/
 │   ├── andres-castellanos-cv.pdf   # (Agrega tu CV aquí)
-│   └── images/              # (Add project screenshots here)
-└── README.md           # This file
+│   └── images/                     # (Capturas de proyectos)
+└── README.md           # Este archivo
 ```
 
 ---
 
-## ✨ Features
+## 🧠 Enfoque técnico
 
-- **Responsive Design** — mobile-first layout, tested on phones, tablets, and desktops
-- **Semantic HTML5** — proper use of `header`, `nav`, `main`, `section`, `footer`
-- **Accessibility** — ARIA labels, focus-visible styles, reduced-motion support
-- **Sticky Navigation** — transparent header that gains background on scroll
-- **Mobile Hamburger Menu** — animated toggle with keyboard (Esc) and outside-click dismissal
-- **Smooth Scrolling** — native CSS + JS offset for fixed header
-- **Intersection Observer** — staggered reveal animations triggered on scroll
-- **Skill Bars** — animated on entry into viewport
-- **Contact Form** — client-side validation with live feedback (ready for Formspree/EmailJS)
-- **Active Nav Highlighting** — current section highlighted in the nav
-- **Print Styles** — clean output when printing or saving as PDF
-- **Performance** — no dependencies, no build step, fast load time
+Este portafolio está orientado a posiciones **backend y automatización**. Refleja:
+
+- Integración de APIs externas (OpenAI, Telegram, Google Sheets)
+- Automatización de procesos con n8n y lógica de decisión con IA
+- Desarrollo de aplicaciones web con JavaScript vanilla y arquitectura modular
+- Manejo de webhooks, flujos asíncronos y servicios de terceros
+- Buenas prácticas de control de versiones con Git
 
 ---
 
-## 🚀 Deployment — GitHub Pages
+## ✨ Características del sitio
 
-### Step 1 — Create the repository
+- **Responsivo** — mobile-first, funciona en móvil, tablet y escritorio
+- **HTML semántico** — `header`, `nav`, `main`, `section`, `footer` correctamente usados
+- **Accesibilidad** — etiquetas ARIA, focus-visible, soporte para `prefers-reduced-motion`
+- **Navegación sticky** — header transparente que toma fondo al hacer scroll
+- **Menú hamburguesa** — con cierre por teclado (Esc) y clic externo
+- **Animaciones de entrada** — reveladas con Intersection Observer al hacer scroll
+- **Barras de habilidades** — animadas al entrar al viewport
+- **Formulario de contacto** — validación en tiempo real lado cliente
+- **Sin dependencias** — cero frameworks, cero build tools, carga instantánea
+
+---
+
+## 🚀 Despliegue en GitHub Pages
+
+### Paso 1 — Crear el repositorio
 
 ```bash
-# Create a new repo on GitHub named:
-# your-username.github.io   ← for a personal site (root URL)
-# OR
-# portfolio                 ← for a project site (lives at /portfolio)
+# Opción A: sitio personal (URL raíz)
+# Nombre del repo: tu-usuario.github.io
+
+# Opción B: sitio de proyecto (vive en /portfolio)
+# Nombre del repo: portfolio
 ```
 
-### Step 2 — Push your code
+### Paso 2 — Subir el código
 
 ```bash
-# Initialize git in your project folder
 git init
 git add .
-git commit -m "feat: initial portfolio release"
+git commit -m "feat: portafolio inicial — junior backend developer"
 
-# Connect to GitHub
-git remote add origin https://github.com/Kiro061/YOUR_REPO.git
+git remote add origin https://github.com/Kiro061/portfolio.git
 git branch -M main
 git push -u origin main
 ```
 
-### Step 3 — Enable GitHub Pages
+### Paso 3 — Activar GitHub Pages
 
-1. Go to your repository on GitHub
-2. Click **Settings** → **Pages** (left sidebar)
-3. Under **Source**, select `main` branch and `/ (root)` folder
-4. Click **Save**
-5. Your site will be live at `https://YOUR_USERNAME.github.io/YOUR_REPO` within ~60 seconds
+1. Ir al repositorio en GitHub
+2. **Settings** → **Pages** (menú lateral)
+3. En **Source**, seleccionar rama `main` y carpeta `/ (root)`
+4. Clic en **Save**
+5. En ~60 segundos el sitio estará en `https://kiro061.github.io/portfolio`
 
-### Step 4 — Custom domain (optional)
+### Paso 4 — Dominio personalizado (opcional)
 
-1. Buy a domain (Namecheap, Google Domains, etc.)
-2. In GitHub Pages settings → **Custom domain**, enter your domain
-3. Add a `CNAME` file to your repo root with just your domain:
+1. Compra un dominio (Namecheap, Porkbun, etc.)
+2. En GitHub Pages → **Custom domain**, escribe tu dominio
+3. Agrega un archivo `CNAME` en la raíz con tu dominio:
    ```
-   www.yourdomain.com
+   www.tudominio.com
    ```
-4. Configure your domain's DNS with a CNAME record pointing to `YOUR_USERNAME.github.io`
+4. Configura el DNS de tu dominio con un registro CNAME apuntando a `kiro061.github.io`
 
 ---
 
-## 📝 Conventional Commits Guide
+## 📝 Guía de Conventional Commits
 
-This project follows [Conventional Commits](https://www.conventionalcommits.org/) for a clean, readable git history.
+Este proyecto sigue [Conventional Commits](https://www.conventionalcommits.org/) para un historial de Git limpio y legible.
 
-| Prefix | When to use | Example |
-|--------|------------|---------|
-| `feat:` | New feature or section | `feat: add projects section with project cards` |
-| `fix:` | Bug fix | `fix: correct mobile menu not closing on link click` |
-| `style:` | CSS/visual changes (no logic) | `style: update hero title font size on mobile` |
-| `refactor:` | Code restructure without behavior change | `refactor: extract form validation into helper function` |
-| `docs:` | Documentation updates | `docs: add GitHub Pages deployment steps to README` |
-| `perf:` | Performance improvement | `perf: add throttle to scroll event listener` |
-| `a11y:` | Accessibility improvements | `a11y: add aria-label to hamburger button` |
-| `chore:` | Maintenance tasks | `chore: remove unused CSS variables` |
+| Prefijo | Cuándo usarlo | Ejemplo |
+|---------|--------------|---------|
+| `feat:` | Nueva sección o funcionalidad | `feat: agregar sección de proyectos con tarjetas reales` |
+| `fix:` | Corrección de bug | `fix: corregir menú móvil que no cierra al hacer clic fuera` |
+| `style:` | Cambios visuales/CSS sin lógica | `style: ajustar espaciado de tarjetas en móvil` |
+| `refactor:` | Reestructura de código sin cambio de comportamiento | `refactor: extraer validación del formulario en función separada` |
+| `docs:` | Cambios en documentación | `docs: actualizar README con enfoque backend` |
+| `perf:` | Mejora de rendimiento | `perf: agregar throttle al listener de scroll` |
+| `a11y:` | Mejoras de accesibilidad | `a11y: agregar aria-label a botón hamburguesa` |
+| `chore:` | Tareas de mantenimiento | `chore: eliminar variables CSS sin uso` |
 
-### Example commit history
+### Ejemplo de historial de commits
 
 ```
-feat: add contact form with client-side validation
-a11y: add aria-live to form error and success messages
-style: improve skill card hover animation
-fix: resolve skill bar not animating on mobile Safari
-refactor: move intersection observer into named function
-docs: update README with Formspree integration note
-feat: add scroll-triggered reveal animations
-feat: initial portfolio structure and hero section
+feat: agregar proyecto Sistema N8N con mockup animado
+feat: agregar proyecto Catálogo de Cursos con buscador
+style: rediseñar tarjetas de skills con iconos por tecnología
+fix: corregir barra de habilidades que no anima en Safari móvil
+refactor: mover estilos de mockups a sección separada en CSS
+docs: actualizar README — reemplazar enfoque frontend por backend
+feat: portafolio inicial — junior backend developer
 ```
 
 ---
 
-## 🔧 Customization Guide
+## 🔧 Guía de personalización
 
-### Personal information
-- Open `index.html` and search for `Alex Rivera` — replace with your name
-- Update email, GitHub, and LinkedIn URLs throughout
-- Edit the About Me text and fact items
-- Replace the avatar SVG with your photo: add `<img src="assets/images/photo.jpg" alt="Your Name" class="avatar-img" />`
+### Datos personales
+- Busca `Andrés Castellanos` en `index.html` y reemplaza donde sea necesario
+- Actualiza email, GitHub y LinkedIn
+- Reemplaza el avatar SVG con tu foto:
+  ```html
+  <img src="assets/images/foto.jpg" alt="Andrés Castellanos" class="avatar-img" />
+  ```
+  Y agrega en CSS:
+  ```css
+  .avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+  }
+  ```
 
-### Projects
-- Replace the CSS mockups with real screenshots
-- Update project titles, descriptions, GitHub links, and live demo URLs
-- Add or remove project cards as needed
+### Proyectos
+- Reemplaza los mockups CSS con capturas reales de tus proyectos
+- Actualiza títulos, descripciones y links de GitHub
+- Agrega o elimina tarjetas según necesites
 
 ### Skills
-- Adjust the `aria-valuenow` and `--w` CSS variable on each skill bar
-- Change the level labels: Familiar / Intermediate / Advanced
+- Ajusta `aria-valuenow` y `--w` en cada barra de habilidad según tu nivel real
+- Cambia los niveles: `Familiar` / `Intermedio` / `Avanzado`
 
-### Colors
-- All colors are in CSS custom properties at the top of `styles.css`
-- Change `--accent` to your preferred brand color
+### Colores
+- Todos los colores están en variables CSS al inicio de `styles.css`
+- Cambia `--accent` para personalizar el color de acento
 
-### Contact form backend
-- The form is UI-only by default (simulated 1.2s delay)
-- Connect it to [Formspree](https://formspree.io) (free tier available):
+### Formulario de contacto
+- El formulario es solo UI por defecto (delay simulado de 1.2s)
+- Para hacerlo funcional con [Formspree](https://formspree.io) (gratuito):
   ```js
-  // In main.js, replace the setTimeout with:
-  await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+  // En main.js, reemplaza el setTimeout con:
+  const res = await fetch('https://formspree.io/f/TU_FORM_ID', {
     method: 'POST',
     headers: { 'Accept': 'application/json' },
     body: new FormData(form)
@@ -146,44 +166,44 @@ feat: initial portfolio structure and hero section
 
 ---
 
-## 🛠️ Local Development
+## 🛠️ Desarrollo local
 
-No build tools needed — just open in a browser:
+Sin build tools — solo abre en el navegador:
 
 ```bash
-# Option 1: VS Code Live Server extension (recommended)
-# Right-click index.html → "Open with Live Server"
+# Opción 1: extensión Live Server de VS Code (recomendada)
+# Clic derecho en index.html → "Open with Live Server"
 
-# Option 2: Python simple server
+# Opción 2: servidor Python
 python3 -m http.server 3000
-# Open http://localhost:3000
+# Abrir http://localhost:3000
 
-# Option 3: Node.js serve
+# Opción 3: Node.js
 npx serve .
 ```
 
 ---
 
-## ♿ Accessibility Checklist
+## ♿ Checklist de accesibilidad
 
-- [x] Semantic HTML landmarks
-- [x] Proper heading hierarchy (h1 → h2 → h3)
-- [x] ARIA labels on icon-only buttons and links
-- [x] `aria-expanded` on hamburger toggle
-- [x] `role="alert"` + `aria-live` on form errors
-- [x] `role="progressbar"` on skill bars with valuenow/valuemin/valuemax
-- [x] Focus-visible outline on all interactive elements
-- [x] `prefers-reduced-motion` media query
-- [x] Sufficient color contrast (WCAG AA)
-- [x] `alt` text pattern for all images
-- [x] `noopener noreferrer` on external links
-
----
-
-## 📄 License
-
-MIT — free to use, modify, and distribute.
+- [x] Landmarks HTML semánticos
+- [x] Jerarquía de encabezados correcta (h1 → h2 → h3)
+- [x] ARIA labels en botones e íconos sin texto visible
+- [x] `aria-expanded` en el toggle del menú hamburguesa
+- [x] `role="alert"` + `aria-live` en errores del formulario
+- [x] `role="progressbar"` en barras de habilidad con valuenow/min/max
+- [x] Estilos `focus-visible` en todos los elementos interactivos
+- [x] Media query `prefers-reduced-motion`
+- [x] Contraste de color suficiente (WCAG AA)
+- [x] `noopener noreferrer` en todos los enlaces externos
+- [x] `lang="es"` en el elemento `<html>`
 
 ---
 
-*Construido con ❤️ y mucho ☕ por Andrés Castellanos*
+## 📄 Licencia
+
+MIT — libre de usar, modificar y distribuir.
+
+---
+
+*Construido con ❤️ y mucho ☕ por Andrés Castellanos · Bucaramanga, Colombia*
