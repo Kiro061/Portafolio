@@ -6,10 +6,10 @@
   <meta name="description" content="Andrés Castellanos — Junior Backend Developer. Automatización, APIs e integración de sistemas con JavaScript, n8n y Python." />
   <title>Andrés Castellanos · Backend Developer</title>
   <link rel="stylesheet" href="styles.css" />
-  <!-- Google Fonts: Playfair Display (display) + DM Sans (body) + JetBrains Mono (code) -->
+  <!-- Google Fonts: DM Sans (headings & body) + JetBrains Mono (code accents) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -30,7 +30,7 @@
         <li><a href="#projects" class="nav-link">Proyectos</a></li>
         <li><a href="#contact" class="nav-link">Contacto</a></li>
         <li>
-          <a href="assets/andres-castellanos-cv.pdf" class="nav-cta" download aria-label="Descargar CV">
+          <a href="assets/CV Andres Felipe Castellanos Jimenez.pdf" class="nav-cta" download="Andres-Castellanos-CV.pdf" type="application/pdf" aria-label="Descargar CV en PDF">
             CV ↓
           </a>
         </li>
@@ -44,7 +44,6 @@
          HERO SECTION
     ============================================================ -->
     <section class="hero" id="hero" aria-label="Introduction">
-      <div class="hero-bg-text" aria-hidden="true">API</div>
       <div class="container hero-inner">
 
         <div class="hero-badge">
@@ -75,67 +74,78 @@
       </div>
     </section>
 
-    <!-- ============================================================
-         ABOUT SECTION
-    ============================================================ -->
-    <section class="about section" id="about" aria-labelledby="about-heading">
-      <div class="container about-grid">
+<!-- ============================================================
+     ABOUT SECTION
+============================================================ -->
+<section class="about section" id="about" aria-labelledby="about-heading">
+  <div class="container about-grid">
 
-        <div class="about-image-wrap">
-          <!-- Placeholder avatar using CSS art -->
-          <div class="avatar-frame" aria-hidden="true">
-            <div class="avatar-placeholder">
-              <svg viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="60" cy="48" r="28" fill="var(--accent)" opacity="0.15"/>
-                <circle cx="60" cy="46" r="24" fill="var(--accent)" opacity="0.3"/>
-                <ellipse cx="60" cy="115" rx="38" ry="25" fill="var(--accent)" opacity="0.15"/>
-                <ellipse cx="60" cy="112" rx="30" ry="20" fill="var(--accent)" opacity="0.25"/>
-                <circle cx="60" cy="44" r="18" fill="var(--navy)"/>
-                <circle cx="60" cy="44" r="14" fill="var(--cream-dark)"/>
-                <circle cx="54" cy="42" r="2.5" fill="var(--navy)"/>
-                <circle cx="66" cy="42" r="2.5" fill="var(--navy)"/>
-                <path d="M54 50 Q60 54 66 50" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-              </svg>
-            </div>
-            <div class="avatar-tag">&lt;/backend-dev&gt;</div>
-          </div>
+    <!-- FOTO -->
+    <div class="about-image-wrap">
+      <div class="avatar-frame">
+
+        <img 
+          src="img/perfil.jpeg" 
+          alt="Foto de perfil" 
+          class="avatar-img"
+        >
+
+        <div class="avatar-tag">
+          &lt;/backend-dev&gt;
         </div>
 
-        <div class="about-content">
-          <p class="section-label">Sobre mí</p>
-          <h2 id="about-heading" class="section-title">Construyendo el motor detrás de las apps</h2>
-
-          <p class="about-text">
-            Soy un desarrollador backend junior ubicado en Bucaramanga, Colombia,
-            con enfoque en automatización de procesos, integración de APIs y lógica
-            de negocio. Me apasiona construir sistemas que resuelvan problemas reales —
-            que funcionen de forma confiable aunque nadie los esté mirando.
-          </p>
-          <p class="about-text">
-            Trabajo con herramientas como n8n, JavaScript y Python para conectar sistemas,
-            procesar datos y automatizar flujos. Mi objetivo es unirme a un equipo donde
-            pueda crecer en el ecosistema backend y aportar desde el primer día.
-          </p>
-
-          <ul class="about-facts" role="list">
-            <li class="fact-item">
-              <span class="fact-icon">📍</span>
-              <span>Bucaramanga, Colombia · Disponible para remoto</span>
-            </li>
-            <li class="fact-item">
-              <span class="fact-icon">🎓</span>
-              <span>Estudiante de Ingeniería de Sistemas</span>
-            </li>
-            <li class="fact-item">
-              <span class="fact-icon">💬</span>
-              <span>Español (nativo) · Inglés (en proceso)</span>
-            </li>
-          </ul>
-
-          <a href="#contact" class="btn btn-primary">Contáctame</a>
-        </div>
       </div>
-    </section>
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="about-content">
+
+      <p class="section-label">Sobre mí</p>
+
+      <h2 id="about-heading" class="section-title">
+        Construyendo el motor detrás de las apps
+      </h2>
+
+      <p class="about-text">
+        Soy un desarrollador backend junior ubicado en Bucaramanga, Colombia,
+        con enfoque en automatización de procesos, integración de APIs y lógica
+        de negocio. Me apasiona construir sistemas que resuelvan problemas reales —
+        que funcionen de forma confiable aunque nadie los esté mirando.
+      </p>
+
+      <p class="about-text">
+        Trabajo con herramientas como n8n, JavaScript y Python para conectar sistemas,
+        procesar datos y automatizar flujos. Mi objetivo es unirme a un equipo donde
+        pueda crecer en el ecosistema backend y aportar desde el primer día.
+      </p>
+
+      <ul class="about-facts" role="list">
+
+        <li class="fact-item">
+          <span class="fact-icon">📍</span>
+          <span>Bucaramanga, Colombia · Disponible para remoto</span>
+        </li>
+
+        <li class="fact-item">
+          <span class="fact-icon">🎓</span>
+          <span>Estudiante de Ingeniería de Sistemas</span>
+        </li>
+
+        <li class="fact-item">
+          <span class="fact-icon">💬</span>
+          <span>Español (nativo) · Inglés (en proceso)</span>
+        </li>
+
+      </ul>
+
+      <a href="#contact" class="btn btn-primary">
+        Contáctame
+      </a>
+
+    </div>
+
+  </div>
+</section>
 
     <!-- ============================================================
          SKILLS SECTION
@@ -150,8 +160,34 @@
 
         <div class="skills-grid">
 
+          <!-- Java (especialidad) -->
+          <article class="skill-card skill-card--featured" style="--delay: 0ms">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#f89820" opacity="0.18"/><text x="50%" y="57%" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#f89820">Java</text></svg>
+            </div>
+            <h3 class="skill-name">Java</h3>
+            <p class="skill-desc">Mi lenguaje principal: POO (encapsulamiento, herencia, composición), colecciones, manejo de excepciones y patrones de diseño (DAO, Factory, Strategy) en proyectos backend completos.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Java 90%">
+              <div class="skill-fill" style="--w: 90%; --color: #f89820"></div>
+            </div>
+            <span class="skill-level">Especialidad</span>
+          </article>
+
+          <!-- Spring Boot (especialidad) -->
+          <article class="skill-card skill-card--featured" style="--delay: 60ms">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#6db33f" opacity="0.18"/><text x="50%" y="57%" text-anchor="middle" dominant-baseline="middle" font-size="9" font-weight="700" fill="#6db33f">SPRING</text></svg>
+            </div>
+            <h3 class="skill-name">Spring Boot</h3>
+            <p class="skill-desc">APIs REST, autenticación con Spring Security y JWT, persistencia con JPA/Hibernate y MySQL, documentación con Swagger/OpenAPI.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Spring Boot 85%">
+              <div class="skill-fill" style="--w: 85%; --color: #6db33f"></div>
+            </div>
+            <span class="skill-level">Especialidad</span>
+          </article>
+
           <!-- JavaScript -->
-          <article class="skill-card" style="--delay: 0ms">
+          <article class="skill-card" style="--delay: 120ms">
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#f7df1e" opacity="0.18"/><text x="50%" y="57%" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="700" fill="#b8a800">JS</text></svg>
             </div>
@@ -164,7 +200,7 @@
           </article>
 
           <!-- Python -->
-          <article class="skill-card" style="--delay: 60ms">
+          <article class="skill-card" style="--delay: 180ms">
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#3776ab" opacity="0.15"/><text x="50%" y="57%" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#3776ab">Py</text></svg>
             </div>
@@ -177,7 +213,7 @@
           </article>
 
           <!-- n8n / Automatización -->
-          <article class="skill-card" style="--delay: 120ms">
+          <article class="skill-card" style="--delay: 240ms">
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#ea4b71" opacity="0.15"/><text x="50%" y="57%" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#ea4b71">n8n</text></svg>
             </div>
@@ -190,7 +226,7 @@
           </article>
 
           <!-- APIs REST -->
-          <article class="skill-card" style="--delay: 180ms">
+          <article class="skill-card" style="--delay: 300ms">
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#22c55e" opacity="0.15"/><text x="50%" y="57%" text-anchor="middle" dominant-baseline="middle" font-size="10" font-weight="700" fill="#16a34a">API</text></svg>
             </div>
@@ -203,7 +239,7 @@
           </article>
 
           <!-- Git & GitHub -->
-          <article class="skill-card" style="--delay: 240ms">
+          <article class="skill-card" style="--delay: 360ms">
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#f05032" opacity="0.12"/><text x="50%" y="57%" text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="700" fill="#f05032">GIT</text></svg>
             </div>
@@ -216,7 +252,7 @@
           </article>
 
           <!-- Bases de Datos -->
-          <article class="skill-card" style="--delay: 300ms">
+          <article class="skill-card" style="--delay: 420ms">
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#7c3aed" opacity="0.12"/><text x="50%" y="57%" text-anchor="middle" dominant-baseline="middle" font-size="10" font-weight="700" fill="#7c3aed">SQL</text></svg>
             </div>
@@ -309,33 +345,33 @@
             </div>
           </article>
 
-          <!-- Project 2 — Catálogo de Cursos (proyecto real) -->
-          <article class="project-card" aria-label="Project: Catálogo de Cursos Institucional">
+          <!-- Project 2 — LogiTrack S.A. (Spring Boot) -->
+          <article class="project-card" aria-label="Project: LogiTrack S.A. — Gestión de Bodegas">
             <div class="project-image" aria-hidden="true">
-              <div class="project-mockup mockup-catalog">
+              <div class="project-mockup mockup-logitrack">
                 <div class="mockup-bar"></div>
                 <div class="mockup-content">
                   <div class="cat-header">
-                    <span class="cat-title">Catálogo de Cursos</span>
-                    <span class="cat-theme">🌙</span>
+                    <span class="cat-title">LogiTrack S.A.</span>
+                    <span class="cat-theme">📦</span>
                   </div>
-                  <div class="cat-search">🔍 Buscar curso o docente…</div>
+                  <div class="cat-search">🔒 Spring Security + JWT</div>
                   <div class="cat-grid">
                     <div class="cat-card">
-                      <div class="cat-card-tag">Matemáticas</div>
-                      <div class="cat-card-name">Cálculo I</div>
+                      <div class="cat-card-tag">Backend</div>
+                      <div class="cat-card-name">Spring Boot</div>
                     </div>
                     <div class="cat-card">
-                      <div class="cat-card-tag">Sistemas</div>
-                      <div class="cat-card-name">Prog. Web</div>
+                      <div class="cat-card-tag">Auth</div>
+                      <div class="cat-card-name">JWT</div>
                     </div>
                     <div class="cat-card">
-                      <div class="cat-card-tag">Ciencias</div>
-                      <div class="cat-card-name">Física II</div>
+                      <div class="cat-card-tag">BD</div>
+                      <div class="cat-card-name">MySQL</div>
                     </div>
                     <div class="cat-card">
-                      <div class="cat-card-tag">Inglés</div>
-                      <div class="cat-card-name">B2 Level</div>
+                      <div class="cat-card-tag">Docs</div>
+                      <div class="cat-card-name">Swagger</div>
                     </div>
                   </div>
                 </div>
@@ -345,21 +381,80 @@
               <div class="project-meta">
                 <span class="project-num">02</span>
                 <div class="project-tags">
-                  <span class="tag">HTML</span>
-                  <span class="tag">CSS</span>
-                  <span class="tag">JavaScript</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">Spring Security</span>
+                  <span class="tag">JWT</span>
+                  <span class="tag">MySQL</span>
                 </div>
               </div>
-              <h3 class="project-title">Catálogo de Cursos Institucional</h3>
+              <h3 class="project-title">LogiTrack S.A. — Gestión de Bodegas</h3>
               <p class="project-desc">
-                Plataforma web para una institución educativa que muestra el catálogo completo de cursos.
-                Incluye buscador en tiempo real por nombre o docente, filtro dinámico por área académica,
-                modal con detalle de módulos y docente, toggle de tema oscuro/claro, y sistema de
-                autenticación con vista diferenciada para estudiantes. Construido en JavaScript vanilla
-                con arquitectura modular y más de 35 commits colaborativos.
+                API backend en Spring Boot para la gestión y auditoría de bodegas: control de productos,
+                movimientos de entrada, salida y transferencia, y usuarios con roles administrador/empleado.
+                Incluye autenticación con Spring Security y JWT, auditoría automática de cambios,
+                manejo global de errores y documentación con Swagger/OpenAPI.
               </p>
               <div class="project-links">
-                <a href="https://github.com/Kiro061/Proyecto-JavaScript-Arturo-y-Andres" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Ver Catálogo de Cursos en GitHub">
+                <a href="https://github.com/Kiro061/ProyectoSpringBootLogiTrack-Andres-Castellanos" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Ver LogiTrack en GitHub">
+                  <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 — TecnoStore (Java) -->
+          <article class="project-card" aria-label="Project: TecnoStore — Sistema de Venta de Celulares">
+            <div class="project-image" aria-hidden="true">
+              <div class="project-mockup mockup-tecnostore">
+                <div class="mockup-bar"></div>
+                <div class="mockup-content">
+                  <div class="cat-header">
+                    <span class="cat-title">TecnoStore</span>
+                    <span class="cat-theme">📱</span>
+                  </div>
+                  <div class="cat-search">🧾 Gestión de ventas</div>
+                  <div class="cat-grid">
+                    <div class="cat-card">
+                      <div class="cat-card-tag">Lenguaje</div>
+                      <div class="cat-card-name">Java POO</div>
+                    </div>
+                    <div class="cat-card">
+                      <div class="cat-card-tag">Persistencia</div>
+                      <div class="cat-card-name">JDBC</div>
+                    </div>
+                    <div class="cat-card">
+                      <div class="cat-card-tag">BD</div>
+                      <div class="cat-card-name">MySQL</div>
+                    </div>
+                    <div class="cat-card">
+                      <div class="cat-card-tag">Patrón</div>
+                      <div class="cat-card-name">DAO</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-num">03</span>
+                <div class="project-tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">POO</span>
+                  <span class="tag">JDBC</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">Patrones de diseño</span>
+                </div>
+              </div>
+              <h3 class="project-title">TecnoStore — Sistema de Venta de Celulares</h3>
+              <p class="project-desc">
+                Sistema en Java para la gestión de celulares, clientes, ventas y reportes. Aplica programación
+                orientada a objetos (encapsulamiento, herencia, composición), colecciones, manejo de excepciones,
+                persistencia con JDBC sobre MySQL, Stream API para reportes de ventas y el patrón de diseño DAO.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Kiro061/Proyecto-TecnoStore-Andres-Felipe-Castellanos" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Ver TecnoStore en GitHub">
                   <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
                   GitHub
                 </a>
